@@ -1,5 +1,5 @@
-import store from "./store";
-const microApps = [
+import store from './store'
+const microApps: any = [
   {
     name: "vue1",
     entry: "//localhost:7301/vue1",
@@ -17,7 +17,7 @@ const microApps = [
   },
 ];
 
-const apps = microApps.map((item) => {
+const apps: any = microApps.map((item: any) => {
   return {
     ...item,
     container: "#cnbi-viewport", // 子应用挂载的div
