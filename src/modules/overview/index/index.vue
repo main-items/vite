@@ -1,7 +1,7 @@
 <template>
   <p>次数 <span :class="{ countStyle: count }">{{count}}</span></p>
   <h1 class="red">overview</h1>
-  <button @click="ClickOn" >接口</button>
+  <n-button @click="ClickOn" >接口</n-button>
 </template>
 
 <script setup>

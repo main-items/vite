@@ -10,6 +10,13 @@ export default defineConfig(({ mode }) => {
       extensions: ['.ts', 'js', '.vue', '.json'],
         alias: {
           '@': resolve('src'),
+          '@api': resolve('api'),
+          '@img': resolve('assets/img'),
+          '@config': resolve('config'),
+          '@mixins': resolve('mixins'),
+          '@router': resolve('router'),
+          '@store': resolve('store'),
+          '@utils': resolve('utils'),
         },
       },
     server: {

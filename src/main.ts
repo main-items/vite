@@ -5,10 +5,12 @@ import { registerMicroApps, start, setDefaultMountApp } from 'qiankun'
 import store from './store'
 import route from './router'
 import Api from './api'
-import microApps from "./micro-app"
+import microApps from './micro-app'
+import utils from './utils'
 import App from './App.vue'
 
 const { routes, beforeEach, afterEach } = route
+const { naive } = utils
   
 const router = createRouter({
   history: createWebHistory('/'),
@@ -23,6 +25,7 @@ router.afterEach(() => {
 
 const instance: any = createApp(App)
   .use(Api)
+  .use(naive)
   .use(router)
   .use(store)
   .mount('#app')
