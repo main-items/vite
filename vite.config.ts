@@ -35,10 +35,7 @@ export default defineConfig(({ mode }) => {
     css: {
       preprocessorOptions: {
         stylus: {
-          modifyVars: {
-            hack: `true; @import (reference) "${resolve('src/assets/styles/variables.styl')}";`,
-          },
-          javascriptEnabled: true
+          additionalData: `@import "./src/assets/stylus/variables.styl"`
         }
       }
     },
