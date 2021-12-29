@@ -31,13 +31,6 @@ export default defineConfig(({ mode }) => {
           rewrite: (path) => path.replace(/^\/xxxx/, ''),
         },
       },
-    },
-    css: {
-      preprocessorOptions: {
-        stylus: {
-          additionalData: `@import "./src/assets/stylus/variables.styl"`
-        }
-      }
-    },
+    }
   }
 })
