@@ -9,6 +9,8 @@ import microApps from './micro-app'
 import utils from './utils'
 import App from './App.vue'
 
+import './assets/stylus/Init'
+
 const { routes, beforeEach, afterEach } = route
 const { naive } = utils
   

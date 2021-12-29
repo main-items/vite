@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [vue()],
     resolve: {
-      extensions: ['.ts', 'js', '.vue', '.json'],
+      extensions: ['.ts', 'js', '.vue', '.styl', '.json'],
         alias: {
           '@': resolve('src'),
           '@api': resolve('api'),
