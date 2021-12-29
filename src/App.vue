@@ -1,5 +1,5 @@
 <script setup>
-import { NConfigProvider } from 'naive-ui'
+import { NConfigProvider, NGlobalStyle, NThemeEditor } from 'naive-ui'
 </script>
 
 <template>
@@ -9,5 +9,7 @@ import { NConfigProvider } from 'naive-ui'
     <router-link :to="{ path: '/overview' }" >概览</router-link>
     <router-view></router-view>
     <div id="cnbi-viewport"></div>
+    <n-global-style />
+    <n-theme-editor />
   </n-config-provider>
 </template>
