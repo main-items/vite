@@ -1,15 +1,15 @@
-<script setup>
-import { NConfigProvider, NGlobalStyle, NThemeEditor } from 'naive-ui'
+<script lang="ts" setup>
+import { NConfigProvider, NGlobalStyle } from 'naive-ui'
+import config from '@config'
+import layout from '@layout'
 </script>
 
 <template>
-  <n-config-provider>
-    <router-link :to="{ path: '/' }" >首页</router-link>
-    &nbsp;&nbsp;&nbsp;
-    <router-link :to="{ path: '/overview' }" >概览</router-link>
-    <router-view></router-view>
-    <div id="cnbi-viewport"></div>
+  <n-config-provider :theme-overrides="config.defaultTheme">
     <n-global-style />
-    <n-theme-editor />
+    <layout>
+      <template v-slot:header ></template>
+      <template v-slot:content ></template>
+    </layout>
   </n-config-provider>
 </template>

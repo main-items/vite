@@ -1,22 +1,24 @@
 import { defineConfig } from 'vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    plugins: [vue()],
+    plugins: [vue(), vueJsx()],
     resolve: {
-      extensions: ['.ts', 'js', '.vue', '.styl', '.json'],
+      extensions: ['.ts', 'js', '.tsx', 'jsx', '.vue', '.styl', '.json'],
       alias: {
         '@': resolve('src'),
-        '@api': resolve('api'),
-        '@img': resolve('assets/img'),
-        '@config': resolve('config'),
-        '@mixins': resolve('mixins'),
-        '@router': resolve('router'),
-        '@store': resolve('store'),
-        '@utils': resolve('utils'),
+        '@api': resolve('src/api'),
+        '@img': resolve('src/assets/img'),
+        '@config': resolve('src/config'),
+        '@mixins': resolve('src/mixins'),
+        '@router': resolve('src/router'),
+        '@store': resolve('src/store'),
+        '@utils': resolve('src/utils'),
+        '@layout': resolve('src/layout'),
       },
     },
     server: {
