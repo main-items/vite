@@ -9,8 +9,8 @@ import { CSSProperties, FunctionalComponent } from 'vue'
 //   childClick: () => void
 // }
 
-// const child: FunctionalComponent<Props, Emit> = (props, ctx) => {
-  const child: FunctionalComponent = () => {
+// export const child: FunctionalComponent<Props, Emit> = (props, ctx) => {
+export const content: FunctionalComponent = () => {
   return (
     <div>
       <router-link to={{ path: '/' }}>首页</router-link>
@@ -22,4 +22,4 @@ import { CSSProperties, FunctionalComponent } from 'vue'
   )
 }
 
-export default child
+export default content

@@ -6,10 +6,11 @@ import layout from '@layout'
 
 <template>
   <n-config-provider :theme-overrides="config.defaultTheme">
-    <n-global-style />
     <layout>
-      <template v-slot:header ></template>
+      <template v-slot:header >
+      </template>
       <template v-slot:content ></template>
     </layout>
+    <n-global-style />
   </n-config-provider>
 </template>
