@@ -1,6 +1,9 @@
+import microApp from './micro-app'
 import theme from './themeOverrides'
+export const microApps = microApp
 export default {
   ...theme,
+  microApps,
   //操作正常code，支持String、Array、int多种类型
   successCode: [200, 0],
   //是否显示顶部进度条

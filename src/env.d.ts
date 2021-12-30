@@ -1,4 +1,4 @@
-/// <reference types="vite/client" />
+// <reference types="vite/client" />
 declare module '*.vue' {
   import { DefineComponent } from 'vue'
   const component: DefineComponent<{}, {}, any>
@@ -9,5 +9,4 @@ declare module '@config'
 declare module '@layout'
 
 declare interface ImportMeta {
-  globEager: any
 }

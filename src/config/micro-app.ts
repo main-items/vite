@@ -1,20 +1,10 @@
-import store from './store'
+import store from '../store'
 const microApps: any = [
   {
-    name: "vue1",
-    entry: "//localhost:7301/vue1",
-    activeRule: "/vue1",
-  },
-  {
-    name: "vue2",
-    entry:"//localhost:7305/vue2",
-    activeRule: "/vue2",
-  },
-  {
-    name: "vue3",
-    entry:"//localhost:7316/vue3",
-    activeRule: "/vue3",
-  },
+    name: "vue3Vite",
+    entry: "//localhost:9080/vue3Vite",
+    activeRule: "/vue3Vite",
+  }
 ];
 
 const apps: any = microApps.map((item: any) => {
