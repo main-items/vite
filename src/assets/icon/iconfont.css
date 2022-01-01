@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2796345 */
+  src: url('iconfont.woff2?t=1637831557012') format('woff2'),
+       url('iconfont.woff?t=1637831557012') format('woff'),
+       url('iconfont.ttf?t=1637831557012') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gennlife_Right:before {
+  content: "\e636";
+}
+
+.gennlife_left:before {
+  content: "\e637";
+}
+
+.gennlife_right:before {
+  content: "\e624";
+}
+
+.gennlife_Layer2:before {
+  content: "\e61e";
+}
+
+.gennlife_Layer1:before {
+  content: "\e61d";
+}
+
+.gennlife_Layer:before {
+  content: "\e61c";
+}
+
+.gennlife_Menu_Collect:before {
+  content: "\e6f5";
+}
+
+.gennlife_Act_Format:before {
+  content: "\e6f3";
+}
+
+.gennlife_Menu_Change:before {
+  content: "\e6f4";
+}
+
+.gennlife_Upload:before {
+  content: "\e61a";
+}
+
+.gennlife_Add:before {
+  content: "\e61b";
+}
+
+.gennlife_Menu_Quality:before {
+  content: "\e6d9";
+}
+
+.gennlife_Show_EyeClose:before {
+  content: "\e6e2";
+}
+
+.gennlife_Show_Calendar:before {
+  content: "\e6e3";
+}
+
+.gennlife_Show_Details:before {
+  content: "\e6e4";
+}
+
+.gennlife_Show_File:before {
+  content: "\e6e5";
+}
+
+.gennlife_Show_Excle:before {
+  content: "\e6e6";
+}
+
+.gennlife_Show_User:before {
+  content: "\e6e7";
+}
+
+.gennlife_Show_Time:before {
+  content: "\e6e8";
+}
+
+.gennlife_Show_Guidee:before {
+  content: "\e6e9";
+}
+
+.gennlife_Show_Bell:before {
+  content: "\e6ea";
+}
+
+.gennlife_Show_SQL:before {
+  content: "\e6eb";
+}
+
+.gennlife_Show_FolderClose:before {
+  content: "\e6ec";
+}
+
+.gennlife_Show_Help:before {
+  content: "\e6ed";
+}
+
+.gennlife_Show_EyeOpen:before {
+  content: "\e6ee";
+}
+
+.gennlife_Show_SelectAll:before {
+  content: "\e6ef";
+}
+
+.gennlife_Show_FolderOpen:before {
+  content: "\e6f0";
+}
+
+.gennlife_Show_News:before {
+  content: "\e6f1";
+}
+
+.gennlife_Show_Warn:before {
+  content: "\e6f2";
+}
+
+.gennlife_Menu_Ddecrypt:before {
+  content: "\e6d7";
+}
+
+.gennlife_Menu_Clean:before {
+  content: "\e6d8";
+}
+
+.gennlife_Menu_DStandard:before {
+  content: "\e6da";
+}
+
+.gennlife_Menu_Jurisdiction:before {
+  content: "\e6db";
+}
+
+.gennlife_Menu_WorkFlow:before {
+  content: "\e6dc";
+}
+
+.gennlife_Menu_projectManagement:before {
+  content: "\e6dd";
+}
+
+.gennlife_Menu_Index:before {
+  content: "\e6de";
+}
+
+.gennlife_Menu_Api:before {
+  content: "\e6df";
+}
+
+.gennlife_Menu_DModel:before {
+  content: "\e6e0";
+}
+
+.gennlife_Menu_Dispose:before {
+  content: "\e6e1";
+}
+
+.gennlife_Dir_Back:before {
+  content: "\e6cc";
+}
+
+.gennlife_Dir_Left:before {
+  content: "\e6cd";
+}
+
+.gennlife_Dir_DoubleDown:before {
+  content: "\e6ce";
+}
+
+.gennlife_Dir_UpDown:before {
+  content: "\e6cf";
+}
+
+.gennlife_Dir_Down:before {
+  content: "\e6d0";
+}
+
+.gennlife_Dir_DoubleUp:before {
+  content: "\e6d1";
+}
+
+.gennlife_Dir_MenuOpen:before {
+  content: "\e6d2";
+}
+
+.gennlife_Dir_Up:before {
+  content: "\e6d3";
+}
+
+.gennlife_Dir_Right:before {
+  content: "\e6d4";
+}
+
+.gennlife_Dir_MenuStow:before {
+  content: "\e6d5";
+}
+
+.gennlife_Dir_Sort:before {
+  content: "\e6d6";
+}
+
+.gennlife_Act_Delet:before {
+  content: "\e6b8";
+}
+
+.gennlife_Act_Copy:before {
+  content: "\e6b9";
+}
+
+.gennlife_Act_Fork:before {
+  content: "\e6ba";
+}
+
+.gennlife_Act_PlusSquare:before {
+  content: "\e6bb";
+}
+
+.gennlife_Act_Publish:before {
+  content: "\e6bc";
+}
+
+.gennlife_Act_ReduceSquare:before {
+  content: "\e6bd";
+}
+
+.gennlife_Act_Save:before {
+  content: "\e6be";
+}
+
+.gennlife_Act_Search:before {
+  content: "\e6bf";
+}
+
+.gennlife_Act_Download:before {
+  content: "\e6c0";
+}
+
+.gennlife_Act_Reduc:before {
+  content: "\e6c1";
+}
+
+.gennlife_Act_Plus:before {
+  content: "\e6c2";
+}
+
+.gennlife_Act_Edit:before {
+  content: "\e6c3";
+}
+
+.gennlife_Act_Screen:before {
+  content: "\e6c4";
+}
+
+.gennlife_Act_Export:before {
+  content: "\e6c5";
+}
+
+.gennlife_Act_Stop:before {
+  content: "\e6c6";
+}
+
+.gennlife_Act_Start:before {
+  content: "\e6c7";
+}
+
+.gennlife_Act_Tick:before {
+  content: "\e6c8";
+}
+
+.gennlife_Act_Upload:before {
+  content: "\e6c9";
+}
+
+.gennlife_Act_Refresh:before {
+  content: "\e6ca";
+}
+
+.gennlife_Act_OffLine:before {
+  content: "\e6cb";
+}
+

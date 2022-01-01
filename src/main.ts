@@ -7,6 +7,7 @@ import router from './router'
 import App from './App.vue'
 
 import './assets/stylus/Init'
+import './assets/icon/iconfont.css'
 
 const instance: any = createApp(App)
   .use(Api)
