@@ -1,22 +1,17 @@
 import { createApp } from 'vue'
 
-import { qiankunFn, naiveUi } from './utils'
+import Router from './router'
 import Api from './api'
-<%_ if (isVuex) { _%>
-  import store from "./store"
-<%_ } _%>
-import router from './router'
+import Plugins from './plugins'
 import App from './App.vue'
 
-import './assets/stylus/Init'
+import './assets/stylus/Init.styl'
+import './assets/stylus/rewriteStyle.styl'
+import './assets/stylus/variables.styl'
+import './assets/iconfont/iconfont.css'
 
 const instance: any = createApp(App)
 instance.use(Api)
-instance.use(naiveUi)
-instance.use(router)
-<%_ if (isVuex) { _%>
-  instance.use(store)
-<%_ } _%>
-instance.mount('#<%= packageName %>')
-
-qiankunFn(instance)
+instance.use(Plugins)
+instance.use(Router)
+instance.mount('#new-main-project')

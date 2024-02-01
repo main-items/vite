@@ -1,16 +1,52 @@
-$color: red // 测试
-$headerIconSize = 16px // 
-$headerTouXiang = 20px // 头部-头像大小
-$headerHeight = 50px // 头部高度
-$asideMinWidth = 60px // 左侧导航最小宽度
-$asideMaxWidth = 200px // 左侧导航最大宽度
-$mainPadding = 20px // 内容区域内边距
-$asideSwitchTop = 112px // 左侧导航展开收起按钮距离顶部的距离
-
-
-:export {
-  stylColor: $color
-  headerHeight: $headerHeight
-  asideMinWidth: $asideMinWidth
-  asideMaxWidth: $asideMaxWidth
+.n-base-selection{
+  --n-height: 32px !important;
+  --n-border-active: 1px solid rgba(6, 120, 255, 1) !important;
+  --n-border-focus: 1px solid rgba(6, 120, 255, 1) !important;
+  --n-border-hover: 1px solid rgba(6, 120, 255, 1) !important;
+  --n-box-shadow-active: 0 0 0 2px rgba(6, 120, 255, 0.2) !important;
+  --n-box-shadow-focus: 0 0 0 2px rgba(6, 120, 255, 0.2) !important;
+}
+.n-select-menu{
+  --n-option-check-color: rgba(6, 120, 255, .7) !important;
+  --n-option-text-color-active: rgba(6, 120, 255, .7) !important;
+  --n-option-text-color-pressed: rgba(6, 120, 255, 1) !important;
+  --n-loading-color: rgba(6, 120, 255, .7) !important;
+}
+.n-drawer-header{
+  --n-close-color-pressed: rgb(255,255,255)
+  --n-close-color-hover: rgb(255,255,255)
+}
+.mainRenderBox{
+  .n-popover {
+    --n-text-color: rgba(255, 255, 255, 1) !important;
+    --n-color: rgba(22, 38, 56, 0.7) !important;
+  }
+  .n-drawer-body-content-wrapper{
+    padding: 12px;
+  }
+}
+.login-info{
+  .n-input{
+    --n-color: rgba(255,255,255, .0) !important;
+    --n-icon-color: rgba(255,255,255, 1) !important;
+    --n-color-focus: rgba(255,255,255, 0) !important;
+    --n-border: 1px solid rgba(255,255,255, .0) !important;
+    --n-border-hover: 1px solid rgba(255,255,255, .0) !important;
+    --n-border-focus: 1px solid rgba(255,255,255, .0) !important;
+    --n-box-shadow-focus: 0 0 0 0 rgba(155,155,155, 0) !important;
+    --n-text-color: #FFFFFF !important;
+  }
+  .n-button{
+    --n-border: none !important;
+  }
+  .n-checkbox{
+    --n-text-color: #FFFFFF !important;
+  }
+}
+.n-input-group {
+  .n-button--default-type{
+    --n-color: #EDF1F5 !important;
+    --n-color-hover: #EDF1F5 !important;
+    --n-color-focus: #EDF1F5 !important;
+  }
 }

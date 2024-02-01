@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+    lang="en"
+    class="new-main-projectHtml">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= projectTitle %></title>
+    <meta
+      charset="UTF-8"
+    />
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>数据资产</title>
   </head>
+  <style>
+    .new-main-projectHtml,
+    .new-main-projectHtml>body,
+    .new-main-projectHtml  .n-config-provider,
+    #new-main-project,
+    #sub-application,
+    #sub-application>div{
+      height: calc(100%);
+    }
+  </style>
   <body>
-    <div id="<%= packageName %>"></div>
+    <div id="new-main-project"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

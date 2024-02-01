@@ -1,93 +1,166 @@
 html,
 body,
-ul,
-ol,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+ul,
+ol,
 p,
-div
-  margin 0
-  padding 0
+div{
+  margin: 0;
+  padding: 0;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+ol{
+  font-size 14px;
+}
+ul{
+  font-size 14px;
+}
+p{
+  font-size 14px;
+}
 
-#<%= projectName %>
-  h1 // 模块标题
-    font-size 24px
-  h2 // 一级标题
-    font-size 22px
-  h3 // 二级标题
-    font-size 16
-  ul,
-  ol,
-  li
-    list-style none
-  a
-    outline none
-    cursor pointer
-    color #3F87FF
-  a,
-  ins,
-  s,
-  u,
-  del
-    border none
-    text-decoration none
-  .bcf
-    background-color #ffffff
-  .oh
-    overflow hidden
-  .lf
-    float left
-  .rf
-    float right
-  .cb
-    clear both
-  .ct
-    text-align center
-  .rt
-    text-align right
-  .lt
-    text-align left
-  .pr
-    position relative
-  .pa
-    position absolute
-  .ell
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    text-overflow: ellipsis !important;
-    word-break: normal !important;
-  [class*='gennlife_']
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+h1{
+  font-size: 24px;
+}
+
+h2{
+  font-size: 22px;
+}
+
+h3{
+  font-size: 16px;
+}
+ul,
+ol,
+li{
+  list-style: none;
+}
+
+a{
+  outline: none;
+  cursor: pointer;
+  color: #3F87FF;
+}
+a,
+ins,
+s,
+u,
+del{
+  border: none;
+  text-decoration: none;
+}
+.bcf{
+  background-color: #ffffff;
+}
+.oh{
+  overflow: hidden;
+}
+.lf{
+  float: left;
+}
+.rf{
+  float: right;
+}
+.cb{
+  clear: both;
+}
+.ct{
+  text-align: center;
+}
+.rt{
+  text-align: right;
+}
+.lt{
+  text-align: left;
+}
+
+.pr {
+  position: relative;
+}
+.pa{
+  position: absolute;
+}
+.ell{
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  word-break: normal !important;
+}
+.ells{
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
+  overflow: hidden !important;
+}
+.shu-zhong {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.text-no {
+  user-select: none;
+}
+.mix{
+  // mix-blend-mode: multiply;
+  mix-blend-mode: difference;
+}
+.filter{
+  filter: blur(0px);
+}
+
+[class*=main_project_icon-]{
+  font-family: "main_project_icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gennlife_case_history_details{
+  &:hover {
+    color: #3f87ff;
+  }  
+}
+
+.scroll{
+  overflow: auto;
   /* 滚动条 */
-  ::-webkit-scrollbar
-    width 9px
-    height 9px
+  &:hover{
+    ::-webkit-scrollbar {
+      display: block;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+    display: none;
+  }
   /* 滚动槽 */
-  ::-webkit-scrollbar-track
-    -webkit-box-shadow #dddddd
-    border-radius 10px
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: #dddddd;
+    border-radius: 10px;
+  }
   /* 滚动条滑块 */
-  ::-webkit-scrollbar-thumb
-    border-radius 10px
-    background-color #dddddd
-    -webkit-box-shadow #dddddd
-  ::-webkit-scrollbar-thumb:window-inactive
-    background-color #dddddd
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #dddddd;
+    -webkit-box-shadow: #dddddd;
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #dddddd;
+  }
+}
 
-  distance = 4 6 8 10 12 14 16 20 30 34 40 60
-  direction = t top, r right, b bottom, l left
-  for num in distance
-    for dir in direction
-      .m{dir[0]}{num}
-        margin-{dir[1]}: 1px * num
-      .p{dir[0]}{num}
-        padding-{dir[1]}: 1px * num
-
+distance = 4 6 8 10 12 14 16 18 20 22 24 28 30 32 34 40 60
+direction = t top, r right, b bottom, l left
+for num in distance
+  for dir in direction
+    .m{dir[0]}{num}
+      margin-{dir[1]}: 1px * num
+    .p{dir[0]}{num}
+      padding-{dir[1]}: 1px * num

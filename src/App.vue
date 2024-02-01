@@ -1,16 +1,26 @@
-<script lang="ts" setup>
-import { NConfigProvider, NGlobalStyle } from 'naive-ui'
-import config from '@config'
-import layout from '@layout'
-</script>
-
 <template>
-  <n-config-provider :theme-overrides="config.defaultTheme">
-    <layout>
-      <template v-slot:header >
-      </template>
-      <template v-slot:content ></template>
-    </layout>
-    <n-global-style />
-  </n-config-provider>
+<NConfigProvider
+  :locale="zhCN"
+  :date-locale="dateZhCN"
+  :theme-overrides="Theme.default"
+  preflight-style-disabled>
+  <NDialogProvider>
+    <NMessageProvider>
+      <div class="mainRouterBox">
+        <router-view />
+      </div>
+      <div class="mainRenderBox" id="mainRenderBox"></div>
+    </NMessageProvider>
+  </NDialogProvider>
+  <NGlobalStyle />
+</NConfigProvider>
 </template>
+<script lang="ts" setup>
+import { zhCN, dateZhCN } from 'naive-ui'
+import Theme from '@theme'
+</script>
+<style lang="stylus" scoped>
+.mainRouterBox{
+  height: calc(100%);
+}
+</style>

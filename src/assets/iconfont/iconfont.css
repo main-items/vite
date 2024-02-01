@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "main_project_icon"; /* Project id 4335981 */
+  src: url('iconfont.woff2?t=1706494367454') format('woff2'),
+       url('iconfont.woff?t=1706494367454') format('woff'),
+       url('iconfont.ttf?t=1706494367454') format('truetype');
+}
+
+.main_project_icon {
+  font-family: "main_project_icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main_project_icon-Fork:before {
+  content: "\e66d";
+}
+
+.main_project_icon-refresh_right:before {
+  content: "\e669";
+}
+
+.main_project_icon-eyes_open:before {
+  content: "\e6d1";
+}
+
+.main_project_icon-eyes_closed:before {
+  content: "\e650";
+}
+
+.main_project_icon-system:before {
+  content: "\e61d";
+}
+
+.main_project_icon-locus:before {
+  content: "\e608";
+}
+
+.main_project_icon-key_tags:before {
+  content: "\e731";
+}
+
+.main_project_icon-label:before {
+  content: "\e7c8";
+}
+
+.main_project_icon-position:before {
+  content: "\e61f";
+}
+
+.main_project_icon-logo_mark:before {
+  content: "\e668";
+}
+
+.main_project_icon-right:before {
+  content: "\e667";
+}
+
+.main_project_icon-lock:before {
+  content: "\e65b";
+}
+
+.main_project_icon-open_eyes:before {
+  content: "\e65c";
+}
+
+.main_project_icon-user:before {
+  content: "\e65d";
+}
+
+.main_project_icon-return:before {
+  content: "\e65e";
+}
+
+.main_project_icon-gear:before {
+  content: "\e65f";
+}
+
+.main_project_icon-overview:before {
+  content: "\e660";
+}
+
+.main_project_icon-entry:before {
+  content: "\e661";
+}
+
+.main_project_icon-left:before {
+  content: "\e662";
+}
+
+.main_project_icon-location:before {
+  content: "\e664";
+}
+
+.main_project_icon-notice:before {
+  content: "\e665";
+}
+
+.main_project_icon-map:before {
+  content: "\e666";
+}
+

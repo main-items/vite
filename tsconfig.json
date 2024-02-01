@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -10,12 +11,32 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
+    "paths": {
+      "@": [ "src" ],
+      "@types": [ "src/types" ],
+      "@img/*": [ "src/assets/img/*" ],
+      "@api": [ "src/api" ],
+      "@api/*": [ "src/api/*" ],
+      "@store": [ "src/store" ],
+      "@config": ["src/config"],
+      "@config/*": ["src/config/*"],
+      "@router": [ "src/router" ],
+      "@theme": [ "src/theme" ],
+      "@utils": [ "src/utils" ],
+      "@utils/*": [ "src/utils/*" ],
+      "@plugins": [ "src/plugins" ],
+      "@plugins/*": [ "src/plugins/*" ],
+      "@mainPage": ["src/layout/main/index.vue"],
+      "@layout/*": ["src/layout/*"],
+      "@modules/*": ["src/modules/*"],
+    },
   },
   "include": [
+    "components.d.ts",
+    "auto-imports.d.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "src/layout"
   ]
 }
